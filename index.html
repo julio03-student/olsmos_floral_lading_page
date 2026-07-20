@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Olmos Floral | Ramos y Diseño Manizales</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#516152", // Darker Forest Green requested
+                        "background": "#516152", // Main background updated
+                        "on-background": "#F1F2F0", // Soft white text
+                        "surface": "#5D6E5E", // Slightly lighter version of the new forest green
+                        "on-surface": "#F1F2F0",
+                        "secondary": "#D4C4B5", // Light Beige accent
+                        "on-secondary": "#1A1A1A",
+                        "tertiary": "#A8BDD9", // Soft Blue accent
+                        "on-tertiary": "#1A1A1A",
+                        "neutral-light": "#F1F2F0",
+                        "neutral-dark": "#1A1A1A",
+                        "outline-variant": "rgba(212, 196, 181, 0.15)"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+
+        ::selection {
+            background-color: #D4C4B5;
+            color: #1A1A1A;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body">
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#516152]/90 backdrop-blur-xl border-b border-white/5">
+        <div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+            <div class="text-2xl font-serif italic text-secondary">
+                Olmos Floral
+            </div>
+            <div class="hidden md:flex items-center gap-12">
+                <a class="text-secondary border-b border-secondary/40 pb-1 font-label text-sm uppercase tracking-wider transition-colors duration-300"
+                    href="#">Arreglos</a>
+                <a class="text-neutral-light/70 hover:text-neutral-light font-label text-sm uppercase tracking-wider transition-colors duration-300"
+                    href="#">Cerámicas</a>
+                <a class="text-neutral-light/70 hover:text-neutral-light font-label text-sm uppercase tracking-wider transition-colors duration-300"
+                    href="#">Talleres</a>
+                <a class="text-neutral-light/70 hover:text-neutral-light font-label text-sm uppercase tracking-wider transition-colors duration-300"
+                    href="#">Eventos</a>
+            </div>
+            <div class="flex items-center gap-6">
+                <button
+                    class="text-neutral-dark bg-secondary font-label text-sm uppercase tracking-wider px-6 py-2 rounded-full hover:bg-neutral-light transition-all duration-300">
+                    WhatsApp
+                </button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[90vh] min-h-[700px] flex items-center overflow-hidden px-8 md:px-20">
+            <div class="absolute inset-0 z-0">
+                <img alt="Composición floral artística" class="w-full h-full object-cover opacity-60 mix-blend-multiply"
+                    data-alt="Close-up of a sophisticated floral arrangement with muted pink roses, eucalyptus, and dried textures in soft natural light."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcBEF2uL8Q0BT7-j30P4dJ-LaS3Cznp5Aml0knClBdm-grkn6NwpYCt_VOHkDoQAWygUsvyMydHXizf5oPUA31Kqt_s082Gh2N8TLJO9_0Ncrele-abQN_OfBcmDux_U4Mx4w5zBWh5ehTk0vwTKEkOHvc-XR8ebAdhmaV2YhHYA8KFmLTgjAHogvLVbM0S0W-LbeQmZyqDtsPtgeVu99llpvoSgRZmjaJqGBYieLDjw4_TNmcwN8O8sGwcZ90LzuE_hxTY8fjyik" />
+                <div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
+            </div>
+            <div class="relative z-10 max-w-3xl">
+                <span class="font-label text-sm uppercase tracking-[0.3em] text-secondary mb-6 block">Ramos y Diseño
+                    Manizales</span>
+                <h1 class="font-headline text-5xl md:text-8xl text-neutral-light mb-8 leading-[1.1]">
+                    Transformo tus <span class="italic text-secondary">emociones</span> a través de las flores.
+                </h1>
+                <button
+                    class="bg-tertiary text-neutral-dark px-10 py-5 rounded-md font-label uppercase tracking-widest text-sm flex items-center gap-4 hover:bg-neutral-light transition-all active:scale-95 duration-200 shadow-lg">
+                    Cotiza tu diseño
+                    <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                </button>
+            </div>
+        </section>
+        <!-- Value Section (Emotional Message) -->
+        <section class="py-32 px-8 max-w-screen-xl mx-auto text-center">
+            <div class="max-w-2xl mx-auto">
+                <span class="material-symbols-outlined text-4xl text-secondary mb-8"
+                    data-icon="auto_awesome">auto_awesome</span>
+                <h2 class="font-headline text-3xl md:text-5xl text-neutral-light mb-10 leading-tight">
+                    Diseño que respira, arreglos que cuentan <span class="italic text-secondary">historias</span>.
+                </h2>
+                <p class="font-body text-lg text-secondary leading-relaxed mb-12 opacity-90">
+                    En Olmos Floral, cada tallo es seleccionado con un propósito. No solo creamos ramos; diseñamos
+                    experiencias sensoriales personalizadas que capturan el alma de cada momento en Manizales. Nuestro
+                    enfoque artesanal garantiza que cada creación sea única e irrepetible.
+                </p>
+                <div class="w-20 h-px bg-secondary/30 mx-auto"></div>
+            </div>
+        </section>
+        <!-- Visual Gallery (Pinterest-style) -->
+        <section class="py-24 px-4 md:px-12 bg-black/5">
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+                <div class="break-inside-avoid group relative">
+                    <img alt="Floral arrangement 1"
+                        class="w-full rounded-2xl shadow-xl group-hover:scale-[1.02] transition-transform duration-500 border border-white/5"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtt15swGRZrmNnC6fX6l3pie8_DQxHB6Cys9Vi2re4jWcClVf5hlT2WnFH_58Rz5pbrQPaIUPBla95wKbLQcGk0V4kr56c79fyUtfLPitU0h4VF0gPb5vlPmmdQLIH9pVIlYBXxJHNv69E1cmC0HcKvpw8Woa7XscUHsT44cq3bP7mCWSNbljSYvnxZf4O35hDhQ9G7tQKAvF_-CAuo1-07v1OiLf_Pkez3GWZgf23W70hlULoNx8ba5MQwqdM98K7NbfiIpcpYt4" />
+                </div>
+                <div class="break-inside-avoid group relative">
+                    <img alt="Floral arrangement 2"
+                        class="w-full rounded-2xl shadow-xl group-hover:scale-[1.02] transition-transform duration-500 border border-white/5"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA07hGtyEDB85v2KC_rOkEHOpJ377ZHKFD6LALvmHEqPJM7n1Is2-hLzFic7zMMUcHic4KpVDbW3rzgtLXBJkiKUd6wr7zkPTIMDihohimlysuQeIFEHjmKlbuCs93cBaueMrDXUVsQ9KBHt70ru1Fzir_bTT0b_PSGDAB52R7STRSK-cvNnjKXbwQBqbk8hV2uAKT6BcbUGSA0n_RXmrI1DGLv5bQ5RZ4MlLruNUveP46fEK5DtXkc-NBJeYV83UejOCjMYexlnhY" />
+                </div>
+                <div class="break-inside-avoid group relative lg:translate-y-12">
+                    <img alt="Floral arrangement 3"
+                        class="w-full rounded-2xl shadow-xl group-hover:scale-[1.02] transition-transform duration-500 border border-white/5"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOupl-oPVQGiR8E2zohNlwOPgX6iNqRowbp7KuQiRK_1swEdpIZiB59JDq2oH7miT7MukDMTKmzpHNrcrHdma4slw1JSEKNc2EEgUtb6Wmy4NZwOPNx3r2KHh8Iq8zx_yHMGWpka1UrAfMxkjy-pmVIYB015y6MKEw6NoBPGH7v4WqIz5_NsY0EaFwHDmSaY7X5IInF4qJRxTVlHP_wAvPVjfWlIGztmKR5-EwG35WVvktCL_W2yhxSBDQoUhkQRZv-43sKFGL_II" />
+                </div>
+                <div class="break-inside-avoid group relative">
+                    <img alt="Floral arrangement 4"
+                        class="w-full rounded-2xl shadow-xl group-hover:scale-[1.02] transition-transform duration-500 border border-white/5"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1XJ_K3r3wxZo4aRqZG79gbF1aKUrwr6la6QBDYAt5S_WCImCv3GfUFLxOEwKBRaMLv7YKf59-cRM9-BqtwP64Fl1bRacxoSsnXweF1OdCQzdVW0lNXuKlQo8uNkxx9BTfnMJ-6p3Axt5t_HYHsKcbBWAGkMyciRVhoajRBIH-3QM5W9rB969PHE1XshLJSDphcVu30aJQLB_huPGyCPrlbrWJxjpxC1mVm6WY5WseUS2hdDIbSERQw2HHOQPHWO96dHo9QbQkVas" />
+                </div>
+            </div>
+            <div class="mt-32 text-center">
+                <p class="font-label text-xs uppercase tracking-[0.4em] text-secondary/60">Inspiración Cotidiana •
+                    @OlmosFloral</p>
+            </div>
+        </section>
+        <!-- Experiences (Workshops) -->
+        <section class="py-40 px-8 md:px-20 grid md:grid-cols-2 gap-20 items-center max-w-screen-2xl mx-auto">
+            <div class="relative">
+                <div class="aspect-[4/5] bg-white/5 rounded-2xl overflow-hidden border border-white/5">
+                    <img alt="Taller floral"
+                        class="w-full h-full object-cover grayscale-[40%] hover:grayscale-0 transition-all duration-1000"
+                        data-alt="Group of women participating in a floral workshop, smiling and arranging flowers on a long wooden table."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6FVdnVVx-_N9OX6rQq6HmslA1SJwGOBSYV2uXz-wYoqidn_gms-qHNxm5a-XirwUJHM_ZUbFRak8_Lv5Cggw9QeJyAZGuJg2GCZ_drKTyf6Jrsn2PDwOPEYgqBJ2jPX3OTd6z-bec-E2pcLCv9u-uKgLUh_J3NFZu6u9DNHRCE_RpG9KSl_rp8Tbhjz7QFFtn5pICEIPXq-dYMH9gGwmB9KRoOJsilK6QMc_6CHFl82XltKD11WI6SLOpGVb4gTiv3-QveZd8H60" />
+                </div>
+                <div class="absolute -bottom-8 -right-8 bg-tertiary p-10 hidden lg:block rounded-sm shadow-2xl">
+                    <h3 class="font-headline text-3xl text-neutral-dark italic">Sentir la Tierra</h3>
+                </div>
+            </div>
+            <div>
+                <span class="font-label text-sm uppercase tracking-widest text-secondary mb-6 block">Talleres y
+                    Bienestar</span>
+                <h2 class="font-headline text-4xl md:text-6xl mb-8 text-neutral-light">Experiencias que Florecen</h2>
+                <p class="font-body text-lg text-secondary/80 mb-10 leading-relaxed">
+                    Nuestros talleres son un refugio del ruido exterior. Un espacio diseñado para conectar con la
+                    naturaleza y tu propio bienestar emocional mientras aprendes el arte de la composición floral.
+                </p>
+                <ul class="space-y-6 mb-12">
+                    <li class="flex items-center gap-4 border-b border-white/10 pb-4">
+                        <span class="material-symbols-outlined text-tertiary" data-icon="psychology">psychology</span>
+                        <span class="font-body text-neutral-light">Manejo del estrés y bienestar consciente</span>
+                    </li>
+                    <li class="flex items-center gap-4 border-b border-white/10 pb-4">
+                        <span class="material-symbols-outlined text-tertiary" data-icon="brush">brush</span>
+                        <span class="font-body text-neutral-light">Técnicas de diseño floral contemporáneo</span>
+                    </li>
+                    <li class="flex items-center gap-4 border-b border-white/10 pb-4">
+                        <span class="material-symbols-outlined text-tertiary"
+                            data-icon="local_florist">local_florist</span>
+                        <span class="font-body text-neutral-light">Exploración de aromas y texturas silvestres</span>
+                    </li>
+                </ul>
+                <a class="inline-block font-label text-sm uppercase tracking-widest text-tertiary border-b-2 border-tertiary pb-2 hover:text-neutral-light hover:border-neutral-light transition-all"
+                    href="#">Ver calendario de talleres</a>
+            </div>
+        </section>
+        <!-- Events Section -->
+        <section class="py-40 bg-neutral-dark/40 text-neutral-light overflow-hidden">
+            <div class="max-w-screen-xl mx-auto px-8 flex flex-col items-center">
+                <div class="text-center mb-20">
+                    <h2 class="font-headline text-5xl md:text-7xl mb-6">Ocasiones Especiales</h2>
+                    <p class="font-body text-secondary max-w-xl mx-auto opacity-70">Transformamos espacios en escenarios
+                        de ensueño con un sello botánico distintivo.</p>
+                </div>
+                <div class="w-full relative group">
+                    <div class="aspect-[21/9] rounded-xl overflow-hidden border border-white/5">
+                        <img alt="Event decoration"
+                            class="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-700"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHuEcT4WUkerDdRPGjt5RXhkuERE0iqWXnACO_1iSHCUCdnc-SlbUUgxaFx_BtZimFHUDsAtOr31S4dGf2NEdE1aL8shS94FhVfa5k1r_ITkikWDOBQD4y6FdIA1gjBiXrUQtBlK2iUmpChHRMq2xb2cELdhtFw_pKy8_S6Qa0rSWXA9c4tz7jYIkc6PHqAW31hoMX7WyqO__fzI614SGXyJJfzTHnkd6g80i5MiSJq1oSu1CzcTxg2d_qhcmeywt5znqWsn8_3K4" />
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <button
+                            class="bg-white/10 backdrop-blur-md border border-white/20 px-12 py-4 rounded-full font-label text-xs uppercase tracking-[0.3em] hover:bg-neutral-light hover:text-neutral-dark transition-all">
+                            Portafolio de Eventos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Process Section -->
+        <section class="py-32 px-8 max-w-screen-xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-16">
+                <div class="text-center md:text-left">
+                    <span class="font-headline text-6xl text-secondary/15 mb-6 block">01.</span>
+                    <h4 class="font-headline text-2xl mb-4 italic text-neutral-light">Cuéntanos tu historia</h4>
+                    <p class="font-body text-secondary/80">Escríbenos compartiendo la emoción o el motivo detrás de tu
+                        pedido floral.</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <span class="font-headline text-6xl text-secondary/15 mb-6 block">02.</span>
+                    <h4 class="font-headline text-2xl mb-4 italic text-neutral-light">Diseño a Medida</h4>
+                    <p class="font-body text-secondary/80">Propongo una paleta de texturas botánicas que resuenen con tu
+                        mensaje personal.</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <span class="font-headline text-6xl text-secondary/15 mb-6 block">03.</span>
+                    <h4 class="font-headline text-2xl mb-4 italic text-neutral-light">Entrega con Alma</h4>
+                    <p class="font-body text-secondary/80">Llevamos el diseño a su destino en Manizales con el cuidado
+                        que una emoción merece.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Final CTA -->
+        <section class="py-40 bg-black/10 relative overflow-hidden border-y border-white/5">
+            <div
+                class="absolute top-0 right-0 w-96 h-96 bg-tertiary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2">
+            </div>
+            <div class="max-w-4xl mx-auto px-8 text-center relative z-10">
+                <h2 class="font-headline text-4xl md:text-6xl mb-8 leading-tight text-neutral-light">
+                    ¿Quieres regalar algo que <br /> <span class="italic text-secondary">realmente se sienta?</span>
+                </h2>
+                <p class="font-body text-xl text-secondary/70 mb-12 max-w-2xl mx-auto">
+                    Estoy aquí para ayudarte a elegir las flores perfectas. Hablemos y diseñemos juntos un detalle
+                    humano y honesto.
+                </p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <button
+                        class="bg-[#25D366] text-white px-10 py-5 rounded-full font-label uppercase tracking-widest text-sm flex items-center gap-3 hover:shadow-2xl hover:scale-105 transition-all">
+                        <span class="material-symbols-outlined" data-icon="chat">chat</span>
+                        Hablar con Olmos
+                    </button>
+                    <span class="text-secondary/60 font-label text-sm italic">Respuesta inmediata</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-black/15 w-full border-t border-white/5">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-20 gap-8 max-w-screen-2xl mx-auto">
+            <div class="flex flex-col gap-4 max-w-md text-center md:text-left">
+                <div class="text-xl font-serif text-secondary">Olmos Floral</div>
+                <p class="text-sm text-secondary/60 font-body leading-relaxed">
+                    © Olmos Floral | Ramos y Diseño Manizales. <br />Transformo tus emociones a través de las flores.
+                </p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-12">
+                <a class="text-neutral-light/70 font-label text-sm uppercase tracking-wider hover:text-secondary transition-colors"
+                    href="#">Instagram</a>
+                <a class="text-neutral-light/70 font-label text-sm uppercase tracking-wider hover:text-secondary transition-colors"
+                    href="#">WhatsApp</a>
+                <a class="text-neutral-light/70 font-label text-sm uppercase tracking-wider hover:text-secondary transition-colors"
+                    href="#">Talleres</a>
+                <a class="text-neutral-light/70 font-label text-sm uppercase tracking-wider hover:text-secondary transition-colors"
+                    href="#">Contacto</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
