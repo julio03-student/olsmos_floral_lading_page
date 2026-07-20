@@ -11,22 +11,23 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;display=swap"
         rel="stylesheet" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
-    <script id="tailwind-config">
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#516152", // Darker Forest Green requested
-                        "background": "#516152", // Main background updated
-                        "on-background": "#F1F2F0", // Soft white text
-                        "surface": "#5D6E5E", // Slightly lighter version of the new forest green
+                        "primary": "#516152",
+                        "background": "#516152",
+                        "on-background": "#F1F2F0",
+                        "surface": "#5D6E5E",
                         "on-surface": "#F1F2F0",
-                        "secondary": "#D4C4B5", // Light Beige accent
+                        "secondary": "#D4C4B5",
                         "on-secondary": "#1A1A1A",
-                        "tertiary": "#A8BDD9", // Soft Blue accent
+                        "tertiary": "#A8BDD9",
                         "on-tertiary": "#1A1A1A",
                         "neutral-light": "#F1F2F0",
                         "neutral-dark": "#1A1A1A",
@@ -42,22 +43,6 @@
             },
         }
     </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
-
-        .editorial-grid {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 1.5rem;
-        }
-
-        ::selection {
-            background-color: #D4C4B5;
-            color: #1A1A1A;
-        }
-    </style>
 </head>
 
 <body class="bg-background text-on-background font-body">
@@ -91,14 +76,14 @@
             <div class="absolute inset-0 z-0">
                 <img alt="Composición floral artística" class="w-full h-full object-cover opacity-60 mix-blend-multiply"
                     data-alt="Close-up of a sophisticated floral arrangement with muted pink roses, eucalyptus, and dried textures in soft natural light."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcBEF2uL8Q0BT7-j30P4dJ-LaS3Cznp5Aml0knClBdm-grkn6NwpYCt_VOHkDoQAWygUsvyMydHXizf5oPUA31Kqt_s082Gh2N8TLJO9_0Ncrele-abQN_OfBcmDux_U4Mx4w5zBWh5ehTk0vwTKEkOHvc-XR8ebAdhmaV2YhHYA8KFmLTgjAHogvLVbM0S0W-LbeQmZyqDtsPtgeVu99llpvoSgRZmjaJqGBYieLDjw4_TNmcwN8O8sGwcZ90LzuE_hxTY8fjyik" />
+                    src="resources/foto_inicio.jpeg" />
                 <div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
             </div>
             <div class="relative z-10 max-w-3xl">
-                <span class="font-label text-sm uppercase tracking-[0.3em] text-secondary mb-6 block">Ramos y Diseño
+                <span class="font-label text-sm uppercase tracking-[0.3em] text-secondary mb-6 block">Ramos & Diseño Floral
                     Manizales</span>
                 <h1 class="font-headline text-5xl md:text-8xl text-neutral-light mb-8 leading-[1.1]">
-                    Transformo tus <span class="italic text-secondary">emociones</span> a través de las flores.
+                    Te veo a través de las <span class="italic text-secondary">flores</span>.
                 </h1>
                 <button
                     class="bg-tertiary text-neutral-dark px-10 py-5 rounded-md font-label uppercase tracking-widest text-sm flex items-center gap-4 hover:bg-neutral-light transition-all active:scale-95 duration-200 shadow-lg">
@@ -123,31 +108,59 @@
                 <div class="w-20 h-px bg-secondary/30 mx-auto"></div>
             </div>
         </section>
-        <!-- Visual Gallery (Pinterest-style) -->
+        <!-- Visual Gallery (Carousel) -->
         <section class="py-24 px-4 md:px-12 bg-black/5">
-            <div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
-                <div class="break-inside-avoid group relative">
-                    <img alt="Floral arrangement 1"
-                        class="w-full rounded-2xl shadow-xl group-hover:scale-[1.02] transition-transform duration-500 border border-white/5"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtt15swGRZrmNnC6fX6l3pie8_DQxHB6Cys9Vi2re4jWcClVf5hlT2WnFH_58Rz5pbrQPaIUPBla95wKbLQcGk0V4kr56c79fyUtfLPitU0h4VF0gPb5vlPmmdQLIH9pVIlYBXxJHNv69E1cmC0HcKvpw8Woa7XscUHsT44cq3bP7mCWSNbljSYvnxZf4O35hDhQ9G7tQKAvF_-CAuo1-07v1OiLf_Pkez3GWZgf23W70hlULoNx8ba5MQwqdM98K7NbfiIpcpYt4" />
+            <div id="carousel" class="relative max-w-5xl mx-auto overflow-hidden rounded-2xl">
+                <div id="carousel-track" class="flex transition-transform duration-700 ease-in-out">
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <img alt="Composición floral 1" class="w-full h-[500px] md:h-[600px] object-cover rounded-2xl" src="resources/img1.jpeg" />
+                    </div>
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <img alt="Composición floral 2" class="w-full h-[500px] md:h-[600px] object-cover rounded-2xl" src="resources/img2.jpeg" />
+                    </div>
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <img alt="Composición floral 3" class="w-full h-[500px] md:h-[600px] object-cover rounded-2xl" src="resources/img3.jpeg" />
+                    </div>
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <img alt="Composición floral 4" class="w-full h-[500px] md:h-[600px] object-cover rounded-2xl" src="resources/img4.jpeg" />
+                    </div>
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <img alt="Composición floral 5" class="w-full h-[500px] md:h-[600px] object-cover rounded-2xl" src="resources/img5.jpeg" />
+                    </div>
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <img alt="Composición floral 6" class="w-full h-[500px] md:h-[600px] object-cover rounded-2xl" src="resources/img6.jpeg" />
+                    </div>
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <img alt="Composición floral 7" class="w-full h-[500px] md:h-[600px] object-cover rounded-2xl" src="resources/img7.jpeg" />
+                    </div>
+                    <div class="carousel-slide w-full flex-shrink-0">
+                        <img alt="Composición floral 8" class="w-full h-[500px] md:h-[600px] object-cover rounded-2xl" src="resources/img8.jpeg" />
+                    </div>
                 </div>
-                <div class="break-inside-avoid group relative">
-                    <img alt="Floral arrangement 2"
-                        class="w-full rounded-2xl shadow-xl group-hover:scale-[1.02] transition-transform duration-500 border border-white/5"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA07hGtyEDB85v2KC_rOkEHOpJ377ZHKFD6LALvmHEqPJM7n1Is2-hLzFic7zMMUcHic4KpVDbW3rzgtLXBJkiKUd6wr7zkPTIMDihohimlysuQeIFEHjmKlbuCs93cBaueMrDXUVsQ9KBHt70ru1Fzir_bTT0b_PSGDAB52R7STRSK-cvNnjKXbwQBqbk8hV2uAKT6BcbUGSA0n_RXmrI1DGLv5bQ5RZ4MlLruNUveP46fEK5DtXkc-NBJeYV83UejOCjMYexlnhY" />
-                </div>
-                <div class="break-inside-avoid group relative lg:translate-y-12">
-                    <img alt="Floral arrangement 3"
-                        class="w-full rounded-2xl shadow-xl group-hover:scale-[1.02] transition-transform duration-500 border border-white/5"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOupl-oPVQGiR8E2zohNlwOPgX6iNqRowbp7KuQiRK_1swEdpIZiB59JDq2oH7miT7MukDMTKmzpHNrcrHdma4slw1JSEKNc2EEgUtb6Wmy4NZwOPNx3r2KHh8Iq8zx_yHMGWpka1UrAfMxkjy-pmVIYB015y6MKEw6NoBPGH7v4WqIz5_NsY0EaFwHDmSaY7X5IInF4qJRxTVlHP_wAvPVjfWlIGztmKR5-EwG35WVvktCL_W2yhxSBDQoUhkQRZv-43sKFGL_II" />
-                </div>
-                <div class="break-inside-avoid group relative">
-                    <img alt="Floral arrangement 4"
-                        class="w-full rounded-2xl shadow-xl group-hover:scale-[1.02] transition-transform duration-500 border border-white/5"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1XJ_K3r3wxZo4aRqZG79gbF1aKUrwr6la6QBDYAt5S_WCImCv3GfUFLxOEwKBRaMLv7YKf59-cRM9-BqtwP64Fl1bRacxoSsnXweF1OdCQzdVW0lNXuKlQo8uNkxx9BTfnMJ-6p3Axt5t_HYHsKcbBWAGkMyciRVhoajRBIH-3QM5W9rB969PHE1XshLJSDphcVu30aJQLB_huPGyCPrlbrWJxjpxC1mVm6WY5WseUS2hdDIbSERQw2HHOQPHWO96dHo9QbQkVas" />
+
+                <!-- Controles -->
+                <button id="carousel-prev" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 backdrop-blur-sm text-neutral-light w-12 h-12 rounded-full flex items-center justify-center hover:bg-black/60 transition-all border border-white/10">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <button id="carousel-next" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 backdrop-blur-sm text-neutral-light w-12 h-12 rounded-full flex items-center justify-center hover:bg-black/60 transition-all border border-white/10">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+
+                <!-- Indicadores -->
+                <div id="carousel-dots" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+                    <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-secondary transition-all" data-index="0"></button>
+                    <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-all" data-index="1"></button>
+                    <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-all" data-index="2"></button>
+                    <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-all" data-index="3"></button>
+                    <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-all" data-index="4"></button>
+                    <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-all" data-index="5"></button>
+                    <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-all" data-index="6"></button>
+                    <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-all" data-index="7"></button>
+                    <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 transition-all" data-index="8"></button>
                 </div>
             </div>
-            <div class="mt-32 text-center">
+
+            <div class="mt-16 text-center">
                 <p class="font-label text-xs uppercase tracking-[0.4em] text-secondary/60">Inspiración Cotidiana •
                     @OlmosFloral</p>
             </div>
@@ -255,7 +268,7 @@
                     <button
                         class="bg-[#25D366] text-white px-10 py-5 rounded-full font-label uppercase tracking-widest text-sm flex items-center gap-3 hover:shadow-2xl hover:scale-105 transition-all">
                         <span class="material-symbols-outlined" data-icon="chat">chat</span>
-                        Hablar con Olmos
+                        Asesoría con Valentina Olmos
                     </button>
                     <span class="text-secondary/60 font-label text-sm italic">Respuesta inmediata</span>
                 </div>
@@ -284,6 +297,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
